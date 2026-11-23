@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- Bandeira da Santa Sé (Vaticano): metade amarela e metade branca com as chaves e a tiara -->
+  <rect width="500" height="1000" fill="#FFE000"/>
+  <rect x="500" width="500" height="1000" fill="#FFFFFF"/>
+
+  <defs>
+    <g id="chave">
+      <!-- haste -->
+      <rect x="-9" y="-170" width="18" height="250" rx="4"/>
+      <!-- dentes (palhetão) -->
+      <path d="M9 -170 H62 V-150 H44 V-136 H62 V-116 H9 Z"/>
+      <!-- argola -->
+      <circle cx="0" cy="118" r="40" fill="none" stroke-width="18"/>
+      <rect x="-22" y="70" width="44" height="12" rx="4"/>
+    </g>
+  </defs>
+
+  <g transform="translate(750 560)">
+    <!-- chave de prata (bit para a esquerda) -->
+    <g transform="rotate(-38) scale(-1 1)" fill="#C9CCD1" stroke="#7d828a" stroke-width="3">
+      <use href="#chave" stroke="#7d828a"/>
+    </g>
+    <!-- chave de ouro (bit para a direita) -->
+    <g transform="rotate(38)" fill="#E8B923" stroke="#9c7410" stroke-width="3">
+      <use href="#chave" stroke="#9c7410"/>
+    </g>
+    <!-- cordão vermelho -->
+    <path d="M-72 92 Q0 150 72 92" fill="none" stroke="#C8102E" stroke-width="8"/>
+    <circle cx="0" cy="128" r="9" fill="#C8102E"/>
+    <path d="M-6 132 L-18 175 M6 132 L18 175" stroke="#C8102E" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- tiara papal -->
+  <g transform="translate(750 330)" stroke="#9c7410" stroke-width="3">
+    <path d="M-62 70 C-66 10 -48 -55 0 -75 C48 -55 66 10 62 70 Z" fill="#FFFFFF"/>
+    <path d="M-63 62 H63 V78 H-63 Z" fill="#E8B923"/>
+    <path d="M-60 18 C-20 26 20 26 60 18 L59 32 C20 40 -20 40 -59 32 Z" fill="#E8B923"/>
+    <path d="M-46 -28 C-15 -21 15 -21 46 -28 L41 -16 C15 -9 -15 -9 -41 -16 Z" fill="#E8B923"/>
+    <circle cx="0" cy="-82" r="9" fill="#E8B923"/>
+    <path d="M0 -92 V-122 M-11 -110 H11" stroke="#9c7410" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
